@@ -46,7 +46,7 @@ You may custom-log any values you wish, as long as they are on an Auditable mode
 
 ```php 
 $article = Article::find(1);
-$article->auditEvent = 'whateverYouWant';
+$article->setAuditEvent('whateverYouWant'); //
 $article->isCustomEvent = true;
 $article->auditCustomOld = [
     'customExample' => 'Anakin Skywalker'
